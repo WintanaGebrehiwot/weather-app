@@ -14,20 +14,42 @@
   </head>
   <body>
     <div class="container">
-      <div class="weatherapp">
-        <h1>New York</h1>
-        <div class="row">
-          <ul class="col-6">
-            <li>☀️12&degC</li>
-            <li>Friday 5:00</li>
-            <li>Clear sky</li>
-          </ul>
-          <ul class="col-6">
-            <li>Precipitation</li>
-            <li>Humidity</li>
-            <li>wind</li>
-          </ul>
+      <div class="weatherappwrapper">
+        <div class="weatherapp">
+          <h1>New York</h1>
+          <br /><br />
+          <div class="row">
+            <ul class="col-8">
+              <li>
+                <div>
+                  <div class="d-flex weather-temperature">
+                    <img
+                      src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                      alt="Clear"
+                      id="icon"
+                    />
+                    <strong id="temperature">12</strong
+                    ><span class="units"> °C | <a href="">°F</a></span>
+                  </div>
+                </div>
+                <br />
+              </li>
+              <li>Friday 5:00</li>
+              <li>Clear sky</li>
+            </ul>
+            <ul class="col-4">
+              <li>Precipitation</li>
+              <li>Humidity</li>
+              <li>wind</li>
+            </ul>
+          </div>
         </div>
+        <small style="font-size: 14px">
+          <a href="https://github.com/WintanaGebrehiwot/weather-app"
+            >open source code</a
+          >
+          by Wintana Gebrehiwot.</small
+        >
       </div>
     </div>
     <script src="app.js"></script>
